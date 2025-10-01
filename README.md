@@ -1,2 +1,2 @@
 <h1>Custom-Music-API</h1>
-<h2>Live demo: https://sakonphat-dev.github.io/Custom-Music-API/</h2>
+<h2><a target="_blank">Live demo: https://sakonphat-dev.github.io/Custom-Music-API/</h2>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Music API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>โปรแกรมเล่นเพลง (Music API)</h1>
+    <div class="music-container " id="music-container">
+        <div class="music-info">
+            <h3 class="title" id="title">เพลง</h3>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="time-container">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+        <audio src="Music/Where_Out_Blue_Is.mp3" controls hidden id="audio" ></audio>
+        <div class="img-container">
+            <img src="cover/Where_Out_Blue_Is.jng" alt="" id="cover">
+        </div>
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class = "fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+            <div class="volume-wrap">
+                <button id="volumeBtn" class="action-btn" aria-label="Mute/Unmute">
+                <i class="fa-solid fa-volume-high"></i>
+                </button>
+                <input id="volumeRange" class="volume-range" type="range" min="0" max="1" step="0.01" value="1" />
+            </div>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
